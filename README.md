@@ -25,7 +25,7 @@ Instructions from the MIPS instruction set.
 
  ![image](https://user-images.githubusercontent.com/94614385/202234572-59ee448c-9942-4f29-8d9a-f6d2496d8ee8.png)
 
- ### The architecture has 6 design units implemented:
+ #### The architecture has 6 design units implemented:
   1. Top level (MIPS)
      - The top level envelop toghter the other 5 design that we will talk about
   2. Control design
