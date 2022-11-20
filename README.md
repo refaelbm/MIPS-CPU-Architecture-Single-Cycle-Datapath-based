@@ -8,7 +8,7 @@ Instructions from the MIPS instruction set.
 
 Program languages: VHDL, Assembly
 
-Programing Tools: ModleSim, Quartus, IAR
+Programming Tools: ModleSim, Quartus, IAR
 
 Design Scope:
 
