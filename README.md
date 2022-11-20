@@ -1,16 +1,16 @@
 # MIPS-CPU-Architecture-Single-Cycle-Datapath-based
 
-Introduction:
+##Introduction:
 
 The aim of this laboratory is to design a simple MIPS compatible CPU using FPGA. The CPU 
 will use a Single Cycle MIPS architecture and must be capable of performing 
 Instructions from the MIPS instruction set.
 
-Program languages: VHDL, Assembly
+**Program languages:** VHDL, Assembly
 
-Programming Tools: ModleSim, Quartus, IAR
+**Programming Tools:** ModleSim, Quartus, IAR
 
-Design Scope:
+##Design Scope:
 
  The architecture includes a MIPS ISA compatible CPU with data and program 
  memory Caches for hosting data and code.
@@ -25,7 +25,7 @@ Design Scope:
 
  ![image](https://user-images.githubusercontent.com/94614385/202234572-59ee448c-9942-4f29-8d9a-f6d2496d8ee8.png)
 
- The architecture has 6 design units implemented:
+ ###The architecture has 6 design units implemented:
   1. Top level (MIPS)
      - The top level envelop toghter the other 5 design that we will talk about
   2. Control design
@@ -41,7 +41,7 @@ Design Scope:
   6. IFetch
      - This is the unit that calculates the address of the next command to be executed, and calls the next command to be executed from memory.
 
-Verification Scope: 
+##Verification Scope: 
  - Implemented with VHDL generator, function checker and coverage using ModelSim  
  - Loading the design into the FPGA using Quartus
   - Running simulations from the first implementation.
