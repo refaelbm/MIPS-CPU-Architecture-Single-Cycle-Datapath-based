@@ -28,16 +28,21 @@ Instructions from the MIPS instruction set.
  ### The architecture has 6 design units implemented:
   **1. Top level (MIPS)**
      - The top level envelop toghter the other 5 design that we will talk about
+     
   **2. Control design**
      - Doing the needed decoding
      - Manage the other units
      - Responsible for all the control lines, and putting the values in them according to the relevant command. 
+     
   **3. DeMemory**
      - Unit that responsible for the write and reading in the memory
+     
   **4. Execute**
      - This is the unit that performs the arithmetic/logical operations that some commands require
+     
   **5. IDeCode**
      - This is the unit that decodes the command, and decides which registers are used.
+     
   **6. IFetch**
      - This is the unit that calculates the address of the next command to be executed, and calls the next command to be executed from memory.
 
