@@ -31,16 +31,21 @@ Design Scope:
 
  The Top level:
  - The top level envelop toghter the other 5 design that we will talk about
+ 
  The Control: 
  - Doing the needed decoding
  - Manage the other units
- - Responsible for all the control lines, and putting the values in them according to the relevant command. 
+ - Responsible for all the control lines, and putting the values in them according to the relevant command.
+ 
  The DeMemory: 
  - Unit that responsible for the write and reading in the memory
+ 
  The Execute: 
  - This is the unit that performs the arithmetic/logical operations that some commands require
+ 
  The IDecode: 
  - This is the unit that decodes the command, and decides which registers are used.
+ 
  The IFetch: 
  - This is the unit that calculates the address of the next command to be executed, and calls the next command to be executed from memory.
 
