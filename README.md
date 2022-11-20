@@ -6,14 +6,9 @@ The aim of this laboratory is to design a simple MIPS compatible CPU using FPGA.
 will use a Single Cycle MIPS architecture and must be capable of performing 
 Instructions from the MIPS instruction set.
 
-Program languages:
- - VHDL
- - Assembly
+Program languages: VHDL,Assembly
 
-Backend Tools: 
- - ModleSim
- - Quartus
- - IAR
+Backend Tools: ModleSim,Quartus,IAR
 
 Design Scope:
 
