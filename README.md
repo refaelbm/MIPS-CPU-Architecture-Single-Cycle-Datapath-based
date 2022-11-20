@@ -2,7 +2,7 @@
 
 Introduction:
 
-The aim of this laboratory is to design a simple MIPS compatible CPU. The CPU 
+The aim of this laboratory is to design a simple MIPS compatible CPU using FPGA. The CPU 
 will use a Single Cycle MIPS architecture and must be capable of performing 
 Instructions from the MIPS instruction set.
 
@@ -23,33 +23,19 @@ Design Scope:
 
  The architecture has 6 design units implemented:
   1. Top level (MIPS)
-  2. Control design 
+     - The top level envelop toghter the other 5 design that we will talk about
+  2. Control design
+     - Doing the needed decoding
+     - Manage the other units
+     - Responsible for all the control lines, and putting the values in them according to the relevant command. 
   3. DeMemory
+     - Unit that responsible for the write and reading in the memory
   4. Execute
+     - This is the unit that performs the arithmetic/logical operations that some commands require
   5. IDeCode
+     - This is the unit that decodes the command, and decides which registers are used.
   6. IFetch
-
- The Top level:
- - The top level envelop toghter the other 5 design that we will talk about
- 
- The Control: 
- - Doing the needed decoding
- - Manage the other units
- - Responsible for all the control lines, and putting the values in them according to the relevant command.
- 
- The DeMemory: 
- - Unit that responsible for the write and reading in the memory
- 
- The Execute: 
- - This is the unit that performs the arithmetic/logical operations that some commands require
- 
- The IDecode: 
- - This is the unit that decodes the command, and decides which registers are used.
- 
- The IFetch: 
- - This is the unit that calculates the address of the next command to be executed, and calls the next command to be executed from memory.
-
- 
+     - This is the unit that calculates the address of the next command to be executed, and calls the next command to be executed from memory.
 
 Verification Scope: 
  - Implemented with VHDL generator, function checker and coverage using ModelSim  
@@ -64,16 +50,6 @@ Program languages:
  - Assembly
 
 Backend Tools: 
- - FPGA
  - ModleSim
  - Quartus
  - IAR
- 
- 
- 
-Design, synthesis and analysis of a simple MIPS compatible CPU with Memory Mapped I/O.
-
-The desing was based on standart 32bits MIPS ISA and the instraction will be 32 bit wide 
-The instractions will support R,I and J types ![image](https://user-images.githubusercontent.com/94614385/202234572-59ee448c-9942-4f29-8d9a-f6d2496d8ee8.png)
-
-We used VHDL code to create the design( Using Quartus and Modelsim) and used Assembly code to check it ( Using IAR)
